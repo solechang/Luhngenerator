@@ -11,7 +11,7 @@
 @implementation Luhnacy
 
 
-- (BOOL)valid: (NSString*)number {
+- (BOOL)isValid: (NSString*)number {
     BOOL flag = [self calculateModulus:number] == 0;
     return flag;
 }
@@ -55,7 +55,7 @@
 }
 
 // Need to include a prefix validator
--(NSMutableString* )generate:(int) stringSize :(NSString*)withPrefix{
+-(NSMutableString* )generateSize:(int) stringSize :(NSString*)withPrefix{
     NSMutableString *outputString;
     NSString *newString;
     

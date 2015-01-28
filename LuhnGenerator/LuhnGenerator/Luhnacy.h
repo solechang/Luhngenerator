@@ -11,10 +11,11 @@
 @interface Luhnacy : NSObject
 
 
-- (BOOL)valid: (NSString*)number;
+// Checks if the number is valid
+- (BOOL)isValid: (NSString*)number;
 
 // Generates a valid luhn  number
 // Need to include a prefix validator
--(NSMutableString* )generate:(int) stringSize :(NSString*)withPrefix;
+-(NSMutableString* )generateSize:(int) stringSize :(NSString*)withPrefix;
 
 @end
